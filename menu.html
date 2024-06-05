@@ -55,34 +55,34 @@
         }
 
         section {
-            height: 80vh;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .navigations {
+            margin-top: 50px;
+        }
+
+        .btn-container button {
+            width: 100px;
         }
     </style>
 
-
-    <div class="row d-flex align-items-center justify-content-center h-75 pt-5 mt-5 home-container">
-        <div class="gap-5">
-            <h1 class="text-center fw-bold pb-5" style="font-size: 60px;">Sheena's Pension House <br> Menu
-            </h1>
-            <div class="navigations">
-                <div class="btn-container d-flex align-items-center justify-content-center gap-5">
-                    <a href="#breakfast"><button class="btn btn-success px-4">Breakfast</button></a>
-                    <a href="#lunch"><button class="btn btn-outline-success px-4">Lunch</button></a>
-                    <a href="#snacks"><button class="btn btn-success px-4">Snacks</button></a>
-                    <a href="#drinks"><button class="btn btn-outline-success px-4">Drinks</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <div class="container-fluid">
         <div class="row mt-5">
-            <div class="col-lg-12">
-
+            <div class="col-lg-12 mt-5">
+                <div class="navigations">
+                    <div class="btn-container d-flex align-items-center justify-content-center gap-5">
+                        <a href="#breakfast"><button class="btn btn-success">Breakfast</button></a>
+                        <a href="#lunch"><button class="btn btn-outline-success">Lunch</button></a>
+                        <a href="#snacks"><button class="btn btn-success">Snacks</button></a>
+                        <a href="#drinks"><button class="btn btn-outline-success">Drinks</button></a>
+                    </div>
+                </div>
 
                 <!-- Breakfast -->
-                <section class="mt-5" id="breakfast">
+                <section class="mt-2" id="breakfast">
                     <div class="breakfast-container p-5">
                         <h1 class="text-center fs-2 px-5">Breakfast</h1>
                         <div id="breakfastCarousel" class="carousel slide m-5" data-bs-ride="carousel">
@@ -250,15 +250,17 @@
                                     style="margin-right: -250px;"></span>
                             </button>
                         </div>
-                        <h6 class="text-center">See all <a href="menu/breakfast.html" class="text-success">Breakfast</a>
-                        </h6>
+                        <div class="see-all d-flex justify-content-center">
+                            <a href="menu/breakfast.html"><button class="btn btn-success">See all
+                                    Breakfast</button></a>
+                        </div>
                     </div>
                 </section>
 
                 <!-- Lunch -->
                 <section class="mt-0 pt-0 bg-success" id="lunch">
                     <div class="lunch-container p-5">
-                        <h1 class="text-center fs-2 px-5">Lunch</h1>
+                        <h1 class="text-center fs-2 px-5 text-light">Lunch</h1>
                         <div id="lunchCarousel" class="carousel slide m-5" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -375,8 +377,10 @@
                                     style="margin-right: -250px;"></span>
                             </button>
                         </div>
-                        <h6 class="text-center">See all <a href="menu/lunch.html" class="text-light">Lunch</a>
-                        </h6>
+                        <div class="see-all d-flex justify-content-center">
+                            <a href="menu/lunch.html"><button class="btn btn-outline-light">See all
+                                    Lunch</button></a>
+                        </div>
                     </div>
                 </section>
 
@@ -540,8 +544,10 @@
                                     style="margin-right: -250px;"></span>
                             </button>
                         </div>
-                        <h6 class="text-center">See all <a href="menu/snacks.html" class="text-success">Snacks</a>
-                        </h6>
+                        <div class="see-all d-flex justify-content-center">
+                            <a href="menu/snacks.html"><button class="btn btn-success">See all
+                                    Snacks</button></a>
+                        </div>
                     </div>
                 </section>
 
@@ -696,7 +702,7 @@
                                     style="margin-right: -250px;"></span>
                             </button>
                         </div>
-                        <h6 class="text-center">See all <a href="menu/drinks.html" class="text-light">Drinks</a>
+                        <h6 class="text-center pt-4">See all <a href="menu/drinks.html" class="text-light">Drinks</a>
                     </div>
                 </section>
             </div>
