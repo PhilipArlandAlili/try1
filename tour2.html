@@ -13,8 +13,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,350,350italic,400italic,700,700italic"
         rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@350;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- SimpleLightbox plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -25,7 +28,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container px-lg-5 p-0">
-            <a class="navbar-brand m-2" href="#page-top">
+            <a class="navbar-brand m-2" href="index.html">
                 <img src="assets/img/logo2.png" height="50" alt="">
             </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
@@ -34,7 +37,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="tour.html">Tour</a></li>
+                    <li class="nav-item"><a class="nav-link text-success" href="#page-top">Tour</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="rooms.html">Rooms</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="menu.html">Menu</a></li>
                 </ul>
@@ -44,92 +47,273 @@
     <!-- Masthead-->
 
     <style>
-        .details p {
-            font-size: 1rem;
-            font-weight: semibold;
-        }
+        /* General Styles */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.details p {
+    font-size: 1rem;
+    font-weight: semibold;
+}
+
+.col-lg-12 {
+    height: 70vh;
+}
+
+.btn-container a {
+    text-decoration: none;
+}
+
+.btn-container button {
+    width: 80%;
+}
+
+@media (max-width: 576px) {
+    .puerto {
+        padding-top: 24px;
+    }
+
+    .btnns {
+        justify-content: center;
+    }
+
+    .btns-container {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .col-lg-12 {
+        height: auto;
+    }
+
+    .details {
+        text-align: center;
+    }
+    
+    .details h1 {
+        font-size: 1.5rem;
+    }
+
+    .details p {
+        font-size: 0.9rem;
+        text-align: justify;
+        margin-left: 0;
+        padding-top: 8px;
+    }
+
+    .price p {
+        text-align: center;
+    }
+
+    .details h3 {
+        font-size: 1.2rem;
+    }
+
+    .btn-container button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn-container a {
+        display: block;
+        width: 100%;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-inner img {
+        height: auto;
+    }
+
+    .col-sm-5 {
+        margin-bottom: 20px;
+    }
+
+    .tour {
+        margin-top: 30px;
+    }
+
+    .tour h1 {
+        font-size: 1.5rem;
+        text-align: start;
+    }
+
+    .tour .img-container img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .tour .details h4 {
+        text-align: start;
+        font-size: 1rem;
+    }
+
+    .tour-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .see-all {
+        padding-left: 16px;
+    }
+    
+}
+
     </style>
 
     <div class="container-fluid">
         <div class="row d-flex align-items-center justify-content-center mt-5">
             <div class="title mt-5">
-                <h3 class="text-center fw-bold fs-1 mt-4">Puerto Pricesa City Tour</h3>
+                <h3 class="text-center fw-bold fs-1 mt-4 puerto">Puerto Pricesa City Tour</h3>
+                <div class="btn-container d-flex justify-content-center mt-5">
+                    <div class="row w-100 btnns">
+                        <div class="col-sm-12 btns-container d-flex justify-content-center ">
+                            <div class="col-sm-2">
+                                <a href="#fireFly"><button class="btn btn-outline-success">Firefly</button></a>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="#underGround"><button class="btn btn-success">Underground River</button></a>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="#hondaBay"><button class="btn btn-outline-success">Honda Bay</button></a>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="#cityTour"><button class="btn btn-success">City Tour</button></a>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="#elNido"><button class="btn btn-outline-success">El Nido</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- FireFly Watching -->
-            <div class="col-lg-12 d-flex justify-content-around p-5">
-                <div class="col-sm-7">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <section id="fireFly" class="col-lg-12 d-flex align-items-center justify-content-around p-5">
+                <div class="col-sm-5">
+                    <div id="fireflyCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="assets/img/firefly/1.jpg" class="d-block w-100 rounded" height="450" alt="">
+                                <img src="assets/img/firefly/2.jpg" height="350" class="d-block w-100 rounded" alt="">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/img/firefly/2.jpg" class="d-block w-100 rounded" height="450" alt="">
+                                <img src="assets/img/firefly/3.jpg" height="350" class="d-block w-100 rounded" alt="">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/img/firefly/3.jpg" class="d-block w-100 rounded" height="450" alt="">
+                                <img src="assets/img/firefly/1.jpg" height="350" class="d-block w-100 rounded" alt="">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#fireflyCarousel"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        <button class="carousel-control-next" type="button" data-bs-target="#fireflyCarousel"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
                 </div>
-                
-                <div class="col-sm-5 d-flex align-items-center justify-content-center">
-                    <div class="details">
-                        <h1 class="fw-bolder text-center">FIREFLY WATCHING</h1>
-                        <h4 class="mb-4 text-secondary text-center">Tour Inclusions</h4>
-                        <p><i class="bi bi-caret-down mt-5"></i>Round Trip Air-Conditioned Van Transfer</p>
-                        <p><i class="bi bi-caret-down"></i>Boat Fees</p>
-                        <p><i class="bi bi-caret-down"></i>Licensed Tour Guid</p>
-                        <p><i class="bi bi-caret-down"></i>Buffer Dinner</p>
-                        <hr class="divider w-100">
-                        <h1 class="fw-bold text-center">PHP 1,300.00</h1>
+
+                <div class="col-sm-5">
+                    <div class="mx-4 details">
+                        <h1 class="fw-bolder">FIREFLY WATCHING</h1>
+                        <div class="description">
+                            <p class="text-secondary">Explore unique opportunity to connect with nature, learn about
+                                biodiversity, and experience the
+                                awe-inspiring beauty of these bioluminescent insects in their natural habitat.</p>
+                        </div>
+                        <div class="see-all">
+                            <div class="tour-inclusion">
+                                <button class="btn btn-success my-2"><a href="tour/firefly.html"
+                                        class="text-light text-decoration-none">See tour inclusion</a></button>
+                            </div>
+                        </div>
+                        <div class="price pt-4">
+                            <p class="text-secondary">Price:</p>
+                            <h3 class="fw-bold text-primary">₱ 1,350.00</h3>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- Underground River -->
-            <div class="col-lg-12 d-flex justify-content-around mt-5 p-5 bg-success">
-                <div class="col-sm-5 d-flex align-items-center justify-content-center">
-                    <div class="details">
-                        <h1 class="fw-bolder text-center text-light">UNDERGROUND RIVER</h1>
-                        <h4 class="mb-4 text-secondary text-center text-white-75">Tour Inclusions</h4>
-                        <p class="text-light"><i class="bi bi-caret-down mt-5"></i>Round Trip Air-Conditioned Van Transfer</p>
-
-                        <p class="text-light"><i class="bi bi-caret-down"></i>Boat Fees</p>
-                        <p class="text-light"><i class="bi bi-caret-down"></i>Entrance Fees</p>
-                        <p class="text-light"><i class="bi bi-caret-down"></i>Cottage Fees</p>
-                        <p class="text-light"><i class="bi bi-caret-down"></i>Terminal Fees</p>
-                        <p class="text-light"><i class="bi bi-caret-down"></i>Permits</p>
-                        <p class="text-light"><i class="bi bi-caret-down"></i>Licensed Tour Guid</p>
-                        <p class="text-light"><i class="bi bi-caret-down"></i>Travel Insurance</p>
-                        <p class="text-light"><i class="bi bi-caret-down"></i>Buffer Dinner</p>
-                        <p class="text-light"><i class="bi bi-caret-down"></i>Audio Device</p>
-                        <hr class="divider w-100">
-                        <h1 class="fw-bold text-center text-light">PHP 1,300.00</h1>
+            <section id="underGround" class="col-lg-12 d-flex align-items-center justify-content-around p-5 bg-success">
+                <div class="col-sm-5">
+                    <div class="mx-4 details">
+                        <h1 class="fw-bolder text-light">UNDERGROUND RIVER</h1>
+                        <!-- <h4 class="mb-4 text-secondary text-center">Tour Inclusions</h4> -->
+                        <div class="description">
+                            <p class="text-white-75">Board a boat and glide along the gentle currents of the underground
+                                river, explore a hidden world teeming with life, where unique species of bats,
+                                swiftlets, and other creatures find sanctuary within the cavernous walls</p>
+                        </div>
+                        <div class="see-all">
+                            <div class="tour-inclusion">
+                                <button class="btn btn-outline-light my-2"><a href="tour/underground.html"
+                                        class="text-light text-decoration-none">See tour inclusion</a></button>
+                            </div>
+                        </div>
+                        <div class="price pt-4">
+                            <p class="text-white-75">Price:</p>
+                            <h3 class="fw-bold text-primary">₱ 1,800.00</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-7">
+                <div class="col-sm-5">
+                    <div id="undergroundCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/underground/2.jpg" height="350" class="d-block w-100 rounded" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/underground/1.jpg" height="350" class="d-block w-100 rounded" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/underground/3.jpg" height="350" class="d-block w-100 rounded" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#undergroundCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#undergroundCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Honda Bay -->
+            <section id="hondaBay" class="col-lg-12 d-flex align-items-center justify-content-around p-5">
+                <div class="col-sm-5">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="assets/img/firefly/1.jpg" class="d-block w-100 rounded" height="450" alt="">
+                                <img src="assets/img/hondaBay/2.jpg" height="350" class="d-block w-100 rounded" alt="">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/img/firefly/2.jpg" class="d-block w-100 rounded" height="450" alt="">
+                                <img src="assets/img/hondaBay/3.jpg" height="350" class="d-block w-100 rounded" alt="">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/img/firefly/3.jpg" class="d-block w-100 rounded" height="450" alt="">
+                                <img src="assets/img/hondaBay/1.jpg" height="350" class="d-block w-100 rounded" alt="">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -144,10 +328,167 @@
                         </button>
                     </div>
                 </div>
-                
-                
-            </div>
 
+                <div class="col-sm-5">
+                    <div class="mx-4 details">
+                        <h1 class="fw-bolder">HONDA BAY</h1>
+                        <!-- <h4 class="mb-4 text-secondary text-center">Tour Inclusions</h4> -->
+                        <div class="description">
+                            <p class="text-secondary">Embark on an island-hopping adventure across Honda Bay's pristine
+                                waters, where you'll discover a collection of stunning islands and islets each with its
+                                own unique charm.</p>
+                        </div>
+                        <div class="see-all">
+                            <div class="tour-inclusion">
+                                <button class="btn btn-success my-2"><a href="tour/hondaBay.html"
+                                        class="text-light text-decoration-none">See tour inclusion</a></button>
+                            </div>
+                        </div>
+                        <div class="price pt-4">
+                            <p class="text-secondary">Price:</p>
+                            <h3 class="fw-bold text-primary">₱ 1,500.00</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- City Tour -->
+            <section id="cityTour" class="col-lg-12 d-flex align-items-center justify-content-around p-5 bg-success">
+                <div class="col-sm-5">
+                    <div class="mx-4 details">
+                        <h1 class="fw-bolder text-light">CITY TOUR</h1>
+                        <!-- <h4 class="mb-4 text-secondary text-center">Tour Inclusions</h4> -->
+                        <div class="description">
+                            <p class="text-white-75">Experience the vibrant atmosphere of Puerto Princesa's bustling
+                                markets, where you can sample exotic fruits, fresh seafood, and local delicacies. Browse
+                                through stalls selling handmade crafts, souvenirs, and traditional products, and engage
+                                with friendly vendors who embody the warmth and hospitality of Palawan.</p>
+                        </div>
+                        <div class="see-all">
+                            <div class="tour-inclusion">
+                                <button class="btn btn-outline-light my-2"><a href="tour/underground.html"
+                                        class="text-light text-decoration-none">See tour inclusion</a></button>
+                            </div>
+                        </div>
+                        <div class="price pt-4">
+                            <p class="text-white-75">Price:</p>
+                            <h3 class="fw-bold text-primary">₱ 600.00</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div id="cityTourCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/cityTour/2.jpg" height="350" class="d-block w-100 rounded" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/cityTour/1.jpg" height="350" class="d-block w-100 rounded" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/cityTour/3.jpg" height="350" class="d-block w-100 rounded" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#cityTourCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#cityTourCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <style>
+                .img-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .tour h1, h4, p {
+                    margin-left: 30px;
+                }
+
+            </style>
+
+            <!-- El Nido -->
+            <section id="elNido" class="mt-5">
+                <div class="title m-0 p-0">
+                    <h3 class="text-center fw-bold">EL NIDO ISLAND HOPPING</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 d-flex mt-4 tour-container">
+                        <div class="col-sm-3 tour">
+                            <h1 class="">Tour A</h1>
+                            <div class="img-container">
+                                <img src="assets/img/elNido/1.jpg" class="rounded" height="200" width="320" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="see-all d-flex justify-content-between">
+                                    <p class="text-secondary pt-2">Price:</p>
+                                    <a href=""><p class="pt-2 mx-4">See all tour inclusions</p></a>
+                                </div>
+                                <div class="price">
+                                    <h4 class="fw-bold text-primary">₱ 1,000.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 tour">
+                            <h1 class="">Tour B</h1>
+                            <div class="img-container">
+                                <img src="assets/img/elNido/2.jpg" class="rounded" height="200" width="320" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="see-all d-flex justify-content-between">
+                                    <p class="text-secondary pt-2">Price:</p>
+                                    <a href=""><p class="pt-2 mx-4">See all tour inclusions</p></a>
+                                </div>
+                                <div class="price">
+                                    <h4 class="fw-bold text-primary">₱ 1,100.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 tour">
+                            <h1 class="">Tour C</h1>
+                            <div class="img-container">
+                                <img src="assets/img/elNido/3.jpg" class="rounded" height="200" width="320" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="see-all d-flex justify-content-between">
+                                    <p class="text-secondary pt-2">Price:</p>
+                                    <a href=""><p class="pt-2 mx-4">See all tour inclusions</p></a>
+                                </div>
+                                <div class="price">
+                                    <h4 class="fw-bold text-primary">₱ 1,200.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 tour">
+                            <div class="title d-flex align-items-center">
+                                <h1 class="">Tour D</h1>
+                                <p class="text-secondary" style="margin-left: 10px;">(Private)</p>
+                            </div>
+                            <div class="img-container">
+                                <img src="assets/img/elNido/4.jpg" class="rounded" height="200" width="320" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="see-all d-flex justify-content-between">
+                                    <p class="text-secondary pt-2">Price:</p>
+                                    <a href=""><p class="pt-2 mx-4">See all tour inclusions</p></a>
+                                </div>
+                                <div class="price">
+                                    <h4 class="fw-bold text-primary">₱ 1,500.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
