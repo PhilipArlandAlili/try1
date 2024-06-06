@@ -46,6 +46,29 @@
             display: flex;
             justify-content: space-between;
         }
+
+        .btn-container {
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 576px) {
+            .navbar-brand img {
+                height: 40px;
+            }
+
+            .btn-container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .btn-container button {
+                width: 280px;
+            }
+
+            li {
+                margin-left: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -63,7 +86,7 @@
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="tour.html">Tour</a></li>
-                    <li class="nav-item"><a class="nav-link text-success" href="#page-top">Room 1/a></li>
+                    <li class="nav-item"><a class="nav-link text-success" href="#page-top">Rooms</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="menu.html">Menu</a></li>
                 </ul>
             </div>
@@ -71,319 +94,232 @@
     </nav>
     <!-- Masthead-->
 
-    <div class="container-fluid p-5">
-        <div class="title my-4 pt-5">
-            <h1 class="text-center">Sheena's Pension House Rooms</h1>
+    <div class="container-fluid pt-5 mt-5">
+        <div class="container pt-5 pb-3">
+            <div class="navigations">
+                <div class="btn-container d-flex align-items-center justify-content-center gap-3 flex-wrap">
+                    <a href="#fanRoom"><button class="btn btn-success">Fan Rooms</button></a>
+                    <a href="#airconRoom"><button class="btn btn-outline-success">Air Conditioned Rooms</button></a>
+                    <a href="#familyRoom"><button class="btn btn-success">Family Rooms</button></a>
+                </div>
+            </div>
         </div>
-        <div class="row py-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-            <!-- Room 1 -->
-            <div class="col py-3">
-                <div class="card">
-                    <div class="img-container">
-                        <img src="assets/img/portfolio/fullsize/1.jpg" class="card-img-top" alt="Room 1">
-                        <div class="room-title">Room 1</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="price d-flex">
-                            <p class="text-secondary">Price:</p>
-                            <h5 class="text-primary">₱ 500.00</h5>
-                        </div>
-                        <div class="btn-container">
-                            <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
-                                        class="bi bi-truck"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Repeat similar blocks for each room -->
-            <!-- Room 2 -->
-            <div class="col py-3">
-                <div class="card">
-                    <div class="img-container">
-                        <img src="assets/img/portfolio/fullsize/2.jpg" class="card-img-top" alt="Room 2">
-                        <div class="room-title">Room 1</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="price d-flex">
-                            <p class="text-secondary">Price:</p>
-                            <h5 class="text-primary">₱ 600.00</h5>
-                        </div>
-                        <div class="btn-container">
-                            <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
-                                        class="bi bi-truck"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more room cards up to Room 16 -->
-            <!-- Room 3 -->
-            <div class="col py-3">
-                <div class="card">
-                    <div class="img-container">
-                        <img src="assets/img/portfolio/fullsize/3.jpg" class="card-img-top" alt="Room 3">
-                        <div class="room-title">Room 1</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="price d-flex">
-                            <p class="text-secondary">Price:</p>
-                            <h5 class="text-primary">₱ 700.00</h5>
-                        </div>
-                        <div class="btn-container">
-                            <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
-                                        class="bi bi-truck"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Continue adding room cards until Room 16 -->
-            <div class="col py-3">
-                <div class="card">
-                    <div class="img-container">
-                        <a href="menu.html" class="a-img"><img src="assets/img/portfolio/fullsize/2.jpg" class="card-img-top" alt="Room 2"></a>
-                        <div class="room-title">Room 1</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="price d-flex">
-                            <p class="text-secondary">Price:</p>
-                            <h5 class="text-primary">₱ 600.00</h5>
-                        </div>
-                        <div class="btn-container">
-                            <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
-                                        class="bi bi-truck"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col py-3">
-                <div class="card">
-                    <div class="img-container">
-                        <a href="menu.html" class="a-img"><img src="assets/img/portfolio/fullsize/2.jpg" class="card-img-top" alt="Room 2"></a>
-                        <div class="room-title">Room 1</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="price d-flex">
-                            <p class="text-secondary">Price:</p>
-                            <h5 class="text-primary">₱ 600.00</h5>
+        <div class="rooms-container m-5">
+            <!-- Fan Rooms -->
+            <section id="fanRoom">
+                <h2 class="my-3 text-center">Fan Rooms</h2>
+                <hr class="divider" />
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                    <!-- Room 1 -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="img-container">
+                                <img src="assets/img/portfolio/fullsize/1.jpg" class="card-img-top" alt="Room 1">
+                                <div class="room-title">Room 1</div>
+                            </div>
+                            <div class="card-body">
+                                <div class="price d-flex">
+                                    <p class="text-secondary">Price:</p>
+                                    <h5 class="text-primary">₱ 500.00</h5>
+                                </div>
+                                <div class="btn-container">
+                                    <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
+                                                class="bi bi-truck"></i></button></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="btn-container">
-                            <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
-                                        class="bi bi-truck"></i></button></a>
+                    </div>
+                    <!-- Room 2 -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="img-container">
+                                <img src="assets/img/portfolio/fullsize/2.jpg" class="card-img-top" alt="Room 2">
+                                <div class="room-title">Room 2</div>
+                            </div>
+                            <div class="card-body">
+                                <div class="price d-flex">
+                                    <p class="text-secondary">Price:</p>
+                                    <h5 class="text-primary">₱ 550.00</h5>
+                                </div>
+                                <div class="btn-container">
+                                    <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
+                                                class="bi bi-truck"></i></button></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="img-container">
+                                <img src="assets/img/portfolio/fullsize/1.jpg" class="card-img-top" alt="Room 1">
+                                <div class="room-title">Room 1</div>
+                            </div>
+                            <div class="card-body">
+                                <div class="price d-flex">
+                                    <p class="text-secondary">Price:</p>
+                                    <h5 class="text-primary">₱ 500.00</h5>
+                                </div>
+                                <div class="btn-container">
+                                    <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
+                                                class="bi bi-truck"></i></button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Room 2 -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="img-container">
+                                <img src="assets/img/portfolio/fullsize/2.jpg" class="card-img-top" alt="Room 2">
+                                <div class="room-title">Room 2</div>
+                            </div>
+                            <div class="card-body">
+                                <div class="price d-flex">
+                                    <p class="text-secondary">Price:</p>
+                                    <h5 class="text-primary">₱ 550.00</h5>
+                                </div>
+                                <div class="btn-container">
+                                    <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
+                                                class="bi bi-truck"></i></button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more fan room cards as needed -->
                 </div>
-            </div>
-
-            <div class="col py-3">
-                <div class="card">
-                    <div class="img-container">
-                        <a href="menu.html" class="a-img"><img src="assets/img/portfolio/fullsize/2.jpg" class="card-img-top" alt="Room 2"></a>
-                        <div class="room-title">Room 1</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="price d-flex">
-                            <p class="text-secondary">Price:</p>
-                            <h5 class="text-primary">₱ 600.00</h5>
-                        </div>
-                        <div class="btn-container">
-                            <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
-                                        class="bi bi-truck"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col py-3">
-                <div class="card">
-                    <div class="img-container">
-                        <a href="menu.html" class="a-img"><img src="assets/img/portfolio/fullsize/2.jpg" class="card-img-top" alt="Room 2"></a>
-                        <div class="room-title">Room 1</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="price d-flex">
-                            <p class="text-secondary">Price:</p>
-                            <h5 class="text-primary">₱ 600.00</h5>
-                        </div>
-                        <div class="btn-container">
-                            <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
-                                        class="bi bi-truck"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col py-3">
-                <div class="card">
-                    <div class="img-container">
-                        <a href="menu.html" class="a-img"><img src="assets/img/portfolio/fullsize/2.jpg" class="card-img-top" alt="Room 2"></a>
-                        <div class="room-title">Room 1</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="price d-flex">
-                            <p class="text-secondary">Price:</p>
-                            <h5 class="text-primary">₱ 600.00</h5>
-                        </div>
-                        <div class="btn-container">
-                            <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
-                                        class="bi bi-truck"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col py-3">
-                <div class="card">
-                    <div class="img-container">
-                        <a href="menu.html" class="a-img"><img src="assets/img/portfolio/fullsize/2.jpg" class="card-img-top" alt="Room 2"></a>
-                        <div class="room-title">Room 1</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="price d-flex">
-                            <p class="text-secondary">Price:</p>
-                            <h5 class="text-primary">₱ 600.00</h5>
-                        </div>
-                        <div class="btn-container">
-                            <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
-                                        class="bi bi-truck"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col py-3">
-                <div class="card">
-                    <div class="img-container">
-                        <a href="menu.html" class="a-img"><img src="assets/img/portfolio/fullsize/2.jpg" class="card-img-top" alt="Room 2"></a>
-                        <div class="room-title">Room 1</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="price d-flex">
-                            <p class="text-secondary">Price:</p>
-                            <h5 class="text-primary">₱ 600.00</h5>
-                        </div>
-                        <div class="btn-container">
-                            <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
-                                        class="bi bi-truck"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col py-3">
-                <div class="card">
-                    <div class="img-container">
-                        <a href="menu.html" class="a-img"><img src="assets/img/portfolio/fullsize/2.jpg" class="card-img-top" alt="Room 2"></a>
-                        <div class="room-title">Room 1</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="price d-flex">
-                            <p class="text-secondary">Price:</p>
-                            <h5 class="text-primary">₱ 600.00</h5>
-                        </div>
-                        <div class="btn-container">
-                            <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
-                                        class="bi bi-truck"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col py-3">
-                <div class="card">
-                    <div class="img-container">
-                        <a href="menu.html" class="a-img"><img src="assets/img/portfolio/fullsize/2.jpg" class="card-img-top" alt="Room 2"></a>
-                        <div class="room-title">Room 1</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="price d-flex">
-                            <p class="text-secondary">Price:</p>
-                            <h5 class="text-primary">₱ 600.00</h5>
-                        </div>
-                        <div class="btn-container">
-                            <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
-                                        class="bi bi-truck"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col py-3">
-                <div class="card">
-                    <div class="img-container">
-                        <a href="menu.html" class="a-img"><img src="assets/img/portfolio/fullsize/2.jpg" class="card-img-top" alt="Room 2"></a>
-                        <div class="room-title">Room 1</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="price d-flex">
-                            <p class="text-secondary">Price:</p>
-                            <h5 class="text-primary">₱ 600.00</h5>
-                        </div>
-                        <div class="btn-container">
-                            <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
-                                        class="bi bi-truck"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col py-3">
-                <div class="card">
-                    <div class="img-container">
-                        <a href="menu.html" class="a-img"><img src="assets/img/portfolio/fullsize/2.jpg" class="card-img-top" alt="Room 2"></a>
-                        <div class="room-title">Room 1</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="price d-flex">
-                            <p class="text-secondary">Price:</p>
-                            <h5 class="text-primary">₱ 600.00</h5>
-                        </div>
-                        <div class="btn-container">
-                            <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
-                                        class="bi bi-truck"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col py-3">
-                <div class="card">
-                    <div class="img-container">
-                        <a href="menu.html" class="a-img"><img src="assets/img/portfolio/fullsize/2.jpg" class="card-img-top" alt="Room 2"></a>
-                        <div class="room-title">Room 1</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="price d-flex">
-                            <p class="text-secondary">Price:</p>
-                            <h5 class="text-primary">₱ 600.00</h5>
-                        </div>
-                        <div class="btn-container">
-                            <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
-                                        class="bi bi-truck"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col py-3">
-                <div class="card">
-                    <div class="img-container">
-                        <a href="menu.html" class="a-img"><img src="assets/img/portfolio/fullsize/2.jpg" class="card-img-top" alt="Room 2"></a>
-                        <div class="room-title">Room 1</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="price d-flex">
-                            <p class="text-secondary">Price:</p>
-                            <h5 class="text-primary">₱ 600.00</h5>
-                        </div>
-                        <div class="btn-container">
-                            <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
-                                        class="bi bi-truck"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
+
+        <!-- Air-Conditioned Rooms -->
+        <section id="airconRoom" class="aircon-rooms pt-3 p-5">
+            <h2 class="mt-5 mb-4 text-center">Air-Conditioned Rooms</h2>
+            <hr class="divider" />
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <!-- Room 3 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="assets/img/portfolio/fullsize/3.jpg" class="card-img-top" alt="Room 3">
+                            <div class="room-title">Room 3</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="price d-flex">
+                                <p class="text-secondary">Price:</p>
+                                <h5 class="text-primary">₱ 600.00</h5>
+                            </div>
+                            <div class="btn-container">
+                                <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
+                                            class="bi bi-truck"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Room 4 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="assets/img/portfolio/fullsize/4.jpg" class="card-img-top" alt="Room 4">
+                            <div class="room-title">Room 4</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="price d-flex">
+                                <p class="text-secondary">Price:</p>
+                                <h5 class="text-primary">₱ 650.00</h5>
+                            </div>
+                            <div class="btn-container">
+                                <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
+                                            class="bi bi-truck"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="assets/img/portfolio/fullsize/3.jpg" class="card-img-top" alt="Room 3">
+                            <div class="room-title">Room 3</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="price d-flex">
+                                <p class="text-secondary">Price:</p>
+                                <h5 class="text-primary">₱ 600.00</h5>
+                            </div>
+                            <div class="btn-container">
+                                <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
+                                            class="bi bi-truck"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Room 4 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="assets/img/portfolio/fullsize/4.jpg" class="card-img-top" alt="Room 4">
+                            <div class="room-title">Room 4</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="price d-flex">
+                                <p class="text-secondary">Price:</p>
+                                <h5 class="text-primary">₱ 650.00</h5>
+                            </div>
+                            <div class="btn-container">
+                                <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
+                                            class="bi bi-truck"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more air-conditioned room cards as needed -->
+            </div>
+        </section>
+
+        <!-- Family Rooms -->
+        <section id="familyRoom" class="aircon-rooms pt-3 p-5">
+            <h2 class="mt-5 mb-4 text-center">Family Rooms</h2>
+            <hr class="divider" />
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <!-- Room 5 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="assets/img/portfolio/fullsize/5.jpg" class="card-img-top" alt="Room 5">
+                            <div class="room-title">Room 5</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="price d-flex">
+                                <p class="text-secondary">Price:</p>
+                                <h5 class="text-primary">₱ 700.00</h5>
+                            </div>
+                            <div class="btn-container">
+                                <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
+                                            class="bi bi-truck"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Room 6 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="assets/img/portfolio/fullsize/6.jpg" class="card-img-top" alt="Room 6">
+                            <div class="room-title">Room 6</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="price d-flex">
+                                <p class="text-secondary">Price:</p>
+                                <h5 class="text-primary">₱ 750.00</h5>
+                            </div>
+                            <div class="btn-container">
+                                <a href=""><button class="btn btn-outline-success w-100">Check Out Room <i
+                                            class="bi bi-truck"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more family room cards as needed -->
+            </div>
+        </section>
     </div>
 
     <!-- Footer-->
