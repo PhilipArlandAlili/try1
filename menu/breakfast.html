@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Sheena's | Rooms</title>
+    <title>Sheena's | Menu</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="../assets/img/bla1.jpg" />
     <!-- Bootstrap Icons-->
@@ -15,14 +15,10 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
         rel="stylesheet" type="text/css" />
-    <!-- SimpleLightbox plugin CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../css/styles.css" rel="stylesheet" />
-</head>
-
-<style>
-    .card {
+    <style>
+        .card {
             border-radius: 10px;
             border: none;
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
@@ -31,7 +27,18 @@
         .card img {
             border-radius: 10px 10px 0 0;
         }
-</style>
+
+        @media (max-width: 576px) {
+        .navbar-brand img {
+            height: 40px;
+        }
+
+        li {
+            margin-left: 10px;
+        }
+    }
+    </style>
+</head>
 
 <body id="page-top">
     <!-- Navigation-->
@@ -48,166 +55,97 @@
                     <li class="nav-item"><a class="nav-link text-dark" href="../index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="../tour.html">Tour</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="../rooms.html">Rooms</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="../menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link text-success" href="../menu.html">Menu</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!-- Masthead-->
     <div class="container-fluid pt-3">
         <div class="row mt-5">
             <div class="col-lg-12">
                 <section class="mt-0 pt-0" id="breakfast">
-                    <div class="breakfast-container p-5">
-                        <h1 class="text-start fs-2">
-                            <a href="../menu.html" style="color: green;"><i class="bi bi-arrow-left-circle mx-4"></i></a>
-                            Breakfast
-                        </h1>
-                        <div class="col-lg-12 d-flex">
-                            <div class="col-sm-3">
-                                <div class="card m-4">
-                                    <img src="../assets/img/portfolio/thumbnails/1.jpg" alt="">
-                                    <div class="menu-name mx-1 pt-3 px-2">
-                                        <h5>Plain Rice</h5>
-                                        <p class="text-secondary">₱20</p>
+                    <div class="title d-flex px-5 pt-5 gap-2">
+                        <a href="../menu.html"><button class="btn btn-success"><i class="bi bi-arrow-left"></i></button></a>
+                        <h1 class="fs-2 fw-bold">Breakfast</h1>
+                    </div>
+                    <div class="breakfast-container pt-3 p-5">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../assets/img/portfolio/thumbnails/1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Plain Rice</h5>
+                                        <p class="card-text text-secondary">₱20</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="card m-4">
-                                    <img src="../assets/img/portfolio/thumbnails/2.jpg" alt="">
-                                    <div class="menu-name mx-1 pt-3 px-2">
-                                        <h5>Fried Egg</h5>
-                                        <p class="text-secondary">₱20</p>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../assets/img/portfolio/thumbnails/2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fried Egg</h5>
+                                        <p class="card-text text-secondary">₱20</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="card m-4">
-                                    <img src="../assets/img/portfolio/thumbnails/3.jpg" alt="">
-                                    <div class="menu-name mx-1 pt-3 px-2">
-                                        <h5>Hotdog</h5>
-                                        <p class="text-secondary">₱30</p>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../assets/img/portfolio/thumbnails/3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hotdog</h5>
+                                        <p class="card-text text-secondary">₱30</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="card m-4">
-                                    <img src="../assets/img/portfolio/thumbnails/4.jpg" alt="">
-                                    <div class="menu-name mx-1 pt-3 px-2">
-                                        <h5>Toccino</h5>
-                                        <p class="text-secondary">₱70</p>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../assets/img/portfolio/thumbnails/4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Toccino</h5>
+                                        <p class="card-text text-secondary">₱70</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-lg-12 d-flex">
-                            <div class="col-sm-3">
-                                <div class="card m-4">
-                                    <img src="../assets/img/portfolio/thumbnails/1.jpg" class="rounded" alt="">
-                                    <div class="menu-name mx-1 pt-3 px-2">
-                                        <h5>Corned Beef</h5>
-                                        <p class="text-secondary">₱60</p>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../assets/img/portfolio/thumbnails/5.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Plain Rice</h5>
+                                        <p class="card-text text-secondary">₱20</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="card m-4">
-                                    <img src="../assets/img/portfolio/thumbnails/2.jpg" alt="">
-                                    <div class="menu-name mx-1 pt-3 px-2">
-                                        <h5>Pancit Canton</h5>
-                                        <p class="text-secondary">₱30</p>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../assets/img/portfolio/thumbnails/6.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fried Egg</h5>
+                                        <p class="card-text text-secondary">₱20</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="card m-4">
-                                    <img src="../assets/img/portfolio/thumbnails/3.jpg" alt="">
-                                    <div class="menu-name mx-1 pt-3 px-2">
-                                        <h5>Toasted Bread</h5>
-                                        <p class="text-secondary">₱10</p>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../assets/img/portfolio/thumbnails/2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hotdog</h5>
+                                        <p class="card-text text-secondary">₱30</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="card m-4">
-                                    <img src="../assets/img/portfolio/thumbnails/4.jpg" alt="">
-                                    <div class="menu-name mx-1 pt-3 px-2">
-                                        <h5>French Bread</h5>
-                                        <p class="text-secondary">₱25</p>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../assets/img/portfolio/thumbnails/1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Toccino</h5>
+                                        <p class="card-text text-secondary">₱70</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col-lg-12 d-flex">
-                            <div class="col-sm-3">
-                                <div class="card m-4">
-                                    <img src="../assets/img/portfolio/thumbnails/1.jpg" class="rounded" alt="">
-                                    <div class="menu-name mx-1 pt-3 px-2">
-                                        <h5>Ham</h5>
-                                        <p class="text-secondary">₱20</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="card m-4">
-                                    <img src="../assets/img/portfolio/thumbnails/2.jpg" alt="">
-                                    <div class="menu-name mx-1 pt-3 px-2">
-                                        <h5>Burger</h5>
-                                        <p class="text-secondary">₱25</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="card m-4">
-                                    <img src="../assets/img/portfolio/thumbnails/3.jpg" alt="">
-                                    <div class="menu-name mx-1 pt-3 px-2">
-                                        <h5>Slice Butter</h5>
-                                        <p class="text-secondary">₱25</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="card m-4">
-                                    <img src="../assets/img/portfolio/thumbnails/4.jpg" alt="">
-                                    <div class="menu-name mx-1 pt-3 px-2">
-                                        <h5>Marmalade</h5>
-                                        <p class="text-secondary">₱25</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 d-flex justify-content-center">
-                            <div class="col-sm-3">
-                                <div class="card m-4">
-                                    <img src="../assets/img/portfolio/thumbnails/1.jpg" class="rounded" alt="">
-                                    <div class="menu-name mx-1 pt-3 px-2">
-                                        <h5>Pancake</h5>
-                                        <p class="text-secondary">₱50</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="card m-4">
-                                    <img src="../assets/img/portfolio/thumbnails/2.jpg" alt="">
-                                    <div class="menu-name mx-1 pt-3 px-2">
-                                        <h5>Coffee (3n1)</h5>
-                                        <p class="text-secondary">₱20</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="card m-4">
-                                    <img src="../assets/img/portfolio/thumbnails/3.jpg" alt="">
-                                    <div class="menu-name mx-1 pt-3 px-2">
-                                        <h5>Black Tea</h5>
-                                        <p class="text-secondary">₱25</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <!-- Add more breakfast items here -->
                         </div>
                     </div>
                 </section>
@@ -218,7 +156,7 @@
     <!-- Footer-->
     <footer class="bg-light py-5">
         <div class="container px-4 px-lg-5">
-            <div class="small text-center text-muted">Copyright &copy; 2023 - Company Name</div>
+            <div class="small text-center text-muted">Copyright &copy; 2024 - Sheena's Pension House</div>
         </div>
     </footer>
     <!-- Bootstrap core JS-->
